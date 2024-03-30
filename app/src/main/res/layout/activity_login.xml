@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/back01"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng nhập"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="30dp"
+        android:layout_above="@+id/lt_Login"/>
+    <LinearLayout
+        android:id="@+id/lt_Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+        <EditText
+            android:id="@+id/emaillog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_radius"
+            android:drawableLeft="@mipmap/user"
+            android:hint="Email"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#4C4A4A"
+            android:drawablePadding="15dp"
+            android:singleLine="true"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/passwordlog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawableLeft="@mipmap/password"
+                android:background="@drawable/bg_radius"
+                android:drawablePadding="15dp"
+                android:hint="Mật khẩu"
+                android:password="true"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="#4C4A4A" />
+
+            <ImageButton
+                android:layout_gravity="end"
+                android:layout_marginRight="10dp"
+                android:id="@+id/showPasswordButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="8dp"
+                android:src="@mipmap/show_pwd" />
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_margin="15dp"
+                android:text="Đăng nhập"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:text="Bạn chưa có tài khoản ?" />
+            <TextView
+                android:id="@+id/registerNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Đăng ký ngay !"
+                android:textColor="#4285F4"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:elevation="10dp"
+        android:visibility="gone"/>
+</RelativeLayout>
