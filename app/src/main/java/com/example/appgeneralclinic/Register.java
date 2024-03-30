@@ -40,7 +40,6 @@ public class Register extends AppCompatActivity {
     ProgressBar progressBar;
     TextView textView;
     DatePickerDialog picker;
-
     RadioGroup radioGroupRegisterGender;
     RadioButton radioButtonRegisterGenderSelected;
 
@@ -195,11 +194,5 @@ public class Register extends AppCompatActivity {
                         });
             }
         });
-
-
-
-
-
-
     }
 }

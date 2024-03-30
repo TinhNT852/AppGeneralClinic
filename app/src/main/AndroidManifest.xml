@@ -13,10 +13,10 @@
         android:theme="@style/Theme.AppGeneralClinic"
         tools:targetApi="31">
         <activity
-            android:name=".Register"
+            android:name=".Login"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".Register"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
