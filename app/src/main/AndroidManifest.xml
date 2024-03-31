@@ -13,7 +13,10 @@
         android:theme="@style/Theme.AppGeneralClinic"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".Account.Register"
+            android:exported="false" />
+        <activity
+            android:name=".Account.Login"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.AppGeneralClinic.NoActionBar">
