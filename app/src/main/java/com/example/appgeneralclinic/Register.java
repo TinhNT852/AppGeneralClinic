@@ -33,7 +33,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class Register extends AppCompatActivity {
 
-    TextInputEditText editTextFullName,editTextDateOfBirth,editTextComfirmPasword,editTextEmail, editTextPassword;
+    TextInputEditText editTextFullName, editTextDateOfBirth, editTextComfirmPasword, editTextEmail, editTextPassword;
     Button buttonReg;
 
     FirebaseAuth mAuth;

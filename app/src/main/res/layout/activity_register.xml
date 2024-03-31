@@ -11,10 +11,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:padding="10dp"
         android:text="Đăng ký"
-        android:textSize="40dp"
+        android:textSize="30dp"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:layout_above="@+id/lt_register"
@@ -41,6 +40,7 @@
             android:id="@+id/emailreg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/email"
             android:background="@drawable/bg_radius"
             android:hint="Email"
             android:layout_margin="10dp"
@@ -48,15 +48,16 @@
             android:textColorHint="#353434"
             android:drawablePadding="15dp"
             android:singleLine="true"/>
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <EditText
                 android:id="@+id/passwordreg"
-                android:layout_width="310dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_radius"
+                android:drawableLeft="@mipmap/password"
                 android:hint="Mật khẩu"
                 android:layout_margin="10dp"
                 android:textColor="@color/black"
@@ -64,21 +65,18 @@
                 android:drawablePadding="15dp"
                 android:singleLine="true"
                 android:password="true"/>
-            <RelativeLayout
+            <ImageButton
+                android:id="@+id/showPasswordButton"
+                android:layout_gravity="end"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/passwordreg">
-                <ImageButton
-                    android:id="@+id/showPasswordButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@mipmap/show_pwd"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:padding="8dp"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentEnd="true"/>
-            </RelativeLayout>
-        </LinearLayout>
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/show_pwd"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="8dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"/>
+        </FrameLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -97,7 +95,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
                 android:layout_weight="1"
-                android:background="@drawable/bg_radius"
+                android:background="@drawable/custom_button"
                 android:padding="10dp"
                 android:text="Tạo tài khoản"
                 android:textColor="@color/black" />
